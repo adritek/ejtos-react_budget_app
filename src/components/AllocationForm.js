@@ -30,6 +30,7 @@ const AllocationForm = (props) => {
                 type: 'ADD_EXPENSE',
                 payload: expense,
             });
+            setCost('')
         }
     };
 
