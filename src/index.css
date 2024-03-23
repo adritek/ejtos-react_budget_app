@@ -7,47 +7,36 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#optionEl {
-    background-color: aliceblue;
+.input-group-prepend > h3, .input-group-prepend > label {
+    height: 100%;
 }
 
-#selectEl {
-    background-color: aqua;
+a[value="$"] {
+  background-color: rgba(255, 0, 208, 1);
 }
 
-#selectEl > option {
-    background-color: bisque;
+a[value="£"] {
+    background-color: rgba(255, 0, 208, 0.8);
 }
 
-.optionEls {
-    background-color: hotpink;
+a[value="€"] {
+    background-color: rgba(255, 0, 208, 0.6);
 }
 
-#inputGroupSelect03, #whut {
-    background-color: cornsilk;
-}
-
-.silly{
-    background-color: hotpink !important;
-}
-
-#inputGroupSelect03 option[value="£"] {
-    background-color: rgba(255, 0, 208, 1);
-}
-  
-select#inputGroupSelect03 option[value="$"] {
-    background-color: rgba(150, 150, 150, 0.8);
-}
-
-select#inputGroupSelect03 option[value="€"] {
-    background-color: rgba(200, 200, 200, 0.6);
-}
-
-select#inputGroupSelect03 option[value="₹"] {
-    background-color: rgba(250, 250, 250, 0.4);
+a[value="₹"] {
+    background-color: rgba(255, 0, 208, 0.4);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#budgetIndicator {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+#budgetInput {
+    width: 60%;
 }
