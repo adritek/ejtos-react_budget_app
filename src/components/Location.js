@@ -11,12 +11,16 @@ const Location = () => {
     };
 
     return (
-        <select className='alert alert-success' name="Location" id="inputGroupSelect03" value="ssss" onChange={event => changeLocation(event.target.value)}>
-            <option defaultValue>Currency (£ Pound)</option>
-            <option value="CAD">$ Dollar</option>
-            <option value="€">€ Europe</option>
-            <option value="₹">₹ India</option>
-        </select>	
+        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="home.html">Action</a></li>
+    <li><a class="dropdown-item" href="home.html">Another action</a></li>
+    <li><a class="dropdown-item" href="home.html">Something else here</a></li>
+  </ul>
+</div>
     );
 };
 
