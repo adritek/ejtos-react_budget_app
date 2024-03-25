@@ -41,10 +41,10 @@ const Location = () => {
                 Currency ({currName})
             </button>
             <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="/#" onClick={() => changeLocation('$')}>$ Dollar</a></li>
-                <li><a className="dropdown-item" href="/#" onClick={() => changeLocation('£')}>£ Pound</a></li>
-                <li><a className="dropdown-item" href="/#" onClick={() => changeLocation('€')}>€ Euro</a></li>
-                <li><a className="dropdown-item" href="/#" onClick={() => changeLocation('₹')}>₹ Ruppee</a></li>
+                <li><a className="dropdown-item" href="/#" data-value="$" onClick={() => changeLocation('$')}>$ Dollar</a></li>
+                <li><a className="dropdown-item" href="/#" data-value="£" onClick={() => changeLocation('£')}>£ Pound</a></li>
+                <li><a className="dropdown-item" href="/#" data-value="€" onClick={() => changeLocation('€')}>€ Euro</a></li>
+                <li><a className="dropdown-item" href="/#" data-value="₹" onClick={() => changeLocation('₹')}>₹ Ruppee</a></li>
             </ul>
         </div>
     );
