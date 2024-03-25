@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { AppContext } from "../context/AppContext";
 
 const AllocationForm = (props) => {
-    const { dispatch, remaining } = useContext(AppContext);
+    const { dispatch, remaining, currency } = useContext(AppContext);
 
     const [name, setName] = useState('');
     const [cost, setCost] = useState('');
@@ -10,7 +10,7 @@ const AllocationForm = (props) => {
 
     const submitEvent = () => {
         if (cost > remaining){
-            alert("The value cannot exceed remaining funds £" + remaining);
+            alert(`The value cannot exceed remaining funds ${currency}` + remaining);
             setCost("");
             return;
         }
@@ -58,7 +58,7 @@ const AllocationForm = (props) => {
                         <option value="Reduce" name="Reduce">Reduce</option>
                     </select>
                     <div className="input-group-prepend" style={{ marginLeft: '2rem' }}>
-                        <h3 className="input-group-text">£</h3>
+                        <h3 className="input-group-text">{currency}</h3>
                     </div>
                     <input
                         required='required'
